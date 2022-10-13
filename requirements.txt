@@ -1,3 +1,4 @@
 streamlit
 PyWavelets
 opencv-python
+joblib
