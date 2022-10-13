@@ -2,7 +2,7 @@ import streamlit as st
 import util
 from PIL import Image
 
-st.set_page_config(page_title='Sports Celebrity Image Classification', layout = 'centered', page_icon = 'logo.png', initial_sidebar_state = 'expanded')
+st.set_page_config(page_title='Sports Celebrity Image Classification', layout = 'centered', initial_sidebar_state = 'expanded')
 
 util.local_css("style.css")
 util.load_saved_artifacts()
@@ -12,7 +12,7 @@ cols = st.columns(3)
 for index, path in enumerate(paths):
   with cols[(index%3)]:
     img = Image.open('test_images/'+path)
-    st.image(img)
+    st.image(img, caption=paths[index].split('.')[0].capitalize())
 
 uploaded_file = st.file_uploader(label="Select Image",type=['png', 'jpg'], label_visibility="hidden")
 
