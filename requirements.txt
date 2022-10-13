@@ -2,3 +2,4 @@ streamlit
 PyWavelets
 opencv-python-headless
 joblib
+scikit-learn
