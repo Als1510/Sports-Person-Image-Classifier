@@ -7,7 +7,7 @@ st.set_page_config(page_title='Sports Celebrity Image Classification', layout = 
 util.local_css("style.css")
 util.load_saved_artifacts()
 
-paths = ['lionel.jpg', 'federer.jpg', 'virat1.jpg', 'sharapova.jpg', 'virat2.jpg', 'serena.jpg']
+paths = ['lionel.jpg', 'federer.jpg', 'virat1.jpg', 'virat2.jpg', 'sharapova.jpg', 'serena.jpg']
 cols = st.columns(3)
 for index, path in enumerate(paths):
   with cols[(index%3)]:
